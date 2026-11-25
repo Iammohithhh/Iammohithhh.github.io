@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 
 type Item = { name: string; href: string };
 
-// Hobbies and Vibes are reached from About, so they highlight About.
+// Hobbies is reached from About, so it highlights About.
 function isActive(href: string, pathname: string) {
   if (href === "/") return pathname === "/";
-  if (href === "/about") return ["/about", "/hobbies", "/vibes"].some((p) => pathname.startsWith(p));
+  if (href === "/about") return ["/about", "/hobbies"].some((p) => pathname.startsWith(p));
   return pathname.startsWith(href);
 }
 

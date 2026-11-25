@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, Brain, Camera, HandHeart, Headphones, Music, Pencil, Sparkles } from "lucide-react";
+import { Brain, Camera, HandHeart, Music, Pencil, Sparkles } from "lucide-react";
 import Gallery from "@/components/Gallery";
 import { interests, type InterestIcon } from "@/lib/data";
 
@@ -63,19 +62,6 @@ export default function HobbiesPage() {
               </div>
             );
           })}
-          <Link
-            href="/vibes"
-            className="group rounded-2xl border border-line bg-white p-5 shadow-card transition hover:shadow-lift"
-          >
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-pale text-accent">
-              <Headphones className="h-5 w-5" aria-hidden />
-            </span>
-            <h3 className="mt-3 font-sans font-semibold">Music</h3>
-            <p className="mt-1 text-sm leading-relaxed text-ink-muted">What I&apos;ve been listening to on Spotify.</p>
-            <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-accent">
-              Open <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" aria-hidden />
-            </span>
-          </Link>
         </div>
       </section>
     </div>

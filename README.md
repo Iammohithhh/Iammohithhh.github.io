@@ -1,6 +1,6 @@
 # Mohith H — personal website
 
-Source for [mohith-h.vercel.app](https://mohith-h.vercel.app): research, notes, projects and a little about me. Built with Next.js and Tailwind CSS and deployed on Vercel; every push to `main` deploys automatically.
+Source for [iammohithhh.github.io](https://iammohithhh.github.io): research, notes, projects and a little about me. Built with Next.js and Tailwind CSS as a static site and deployed to GitHub Pages by [a GitHub Actions workflow](.github/workflows/deploy.yml); every push to `main` deploys automatically.
 
 ## Run it locally
 
@@ -19,7 +19,7 @@ npm run build      # production build, drafts hidden
 | `/notes` | Notes, written in Obsidian |
 | `/projects` | Highlighted and other projects |
 | `/about` | Bio, experience, education, awards, news |
-| `/hobbies`, `/vibes` | Sketches, sky photos, other interests, Spotify |
+| `/hobbies` | Sketches, sky photos and other interests |
 
 ## Where things live
 
@@ -62,7 +62,7 @@ Publications are defined once in `lib/data.ts` and reused on the Research page a
 
 2. Write. Paste images straight in; they land in `attachments/`.
 3. When it's ready, move the note out of `_drafts` into the vault root (or any folder not starting with `_`).
-4. Run **Obsidian Git: Commit and push** from the command palette. Vercel rebuilds the site in about a minute.
+4. Run **Obsidian Git: Commit and push** from the command palette. GitHub Actions rebuilds the site in a couple of minutes.
 
 To update a note later, edit it, change `updated`, and commit and push again. The URL stays the same as long as the file name doesn't change; set `slug: your-url` in the properties if you want to rename a file without changing its URL.
 
@@ -77,7 +77,3 @@ To update a note later, edit it, change `updated`, and commit and push again. Th
 ### Keep private things private
 
 This repository is public. Anything committed under `content/notes` can be read on GitHub, even if it isn't shown on the site. Keep drafts in `_drafts` and private research notes in a separate vault.
-
-## Spotify (`/vibes`)
-
-The Vibes page reads `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET` and `SPOTIFY_REFRESH_TOKEN`. Set them in Vercel → Project → Settings → Environment Variables, and locally in `.env.local`, which is git-ignored and must never be committed.

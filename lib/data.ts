@@ -6,7 +6,7 @@ export const site = {
   title: "Mohith H — ML for atomistic simulation",
   description:
     "Chemical Engineering undergraduate at IIT Bombay working on machine learning interatomic potentials, long-range electrostatics and differentiable scientific computing.",
-  url: "https://mohith-h.vercel.app",
+  url: "https://iammohithhh.github.io",
 };
 
 export const personalInfo = {

@@ -107,9 +107,6 @@ export default function AboutPage() {
           <Link href="/hobbies" className="link inline-flex items-center gap-1">
             Hobbies: sketches, sky photos and more <ArrowRight className="h-4 w-4" aria-hidden />
           </Link>
-          <Link href="/vibes" className="link inline-flex items-center gap-1">
-            What I&apos;m listening to <ArrowRight className="h-4 w-4" aria-hidden />
-          </Link>
         </p>
       </AboutSection>
     </div>
