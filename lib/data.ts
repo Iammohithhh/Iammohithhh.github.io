@@ -158,6 +158,8 @@ export const research: ResearchProject[] = [
     limitations: [],
     methods: ["DFT", "PyTorch", "Automatic differentiation", "SVD pseudoinverse"],
     publicationId: "opt-ddap",
+    image: "/research/opt-ddap.webp",
+    imageCaption: "opt-DDAP: atomic charges fitted to the DFT charge density through a differentiable computational graph",
     links: [],
   },
   {
@@ -183,6 +185,8 @@ export const research: ResearchProject[] = [
     ],
     limitations: [],
     methods: ["DFT", "MLIPs", "ACE", "MACE", "Molecular dynamics", "opt-DDAP"],
+    image: "/research/metal-water-mlips.webp",
+    imageCaption: "Water and a cation at a metal surface",
     links: [],
   },
   {
@@ -211,6 +215,8 @@ export const research: ResearchProject[] = [
       "A 33% underprediction for LiTFSI traces to an anion-specific binding effect that purely geometric descriptors cannot see.",
     ],
     methods: ["Molecular dynamics", "SOAP descriptors", "Incremental PCA", "UMAP", "HDBSCAN"],
+    image: "/research/water-activity.webp",
+    imageCaption: "SOAP-based clustering of water environments and water-activity regression",
     links: [],
   },
 ];

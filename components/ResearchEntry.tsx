@@ -15,7 +15,7 @@ export function ResearchRow({ project }: { project: ResearchProject }) {
       href={`/research/${project.slug}`}
       className="group grid grid-cols-[6rem_1fr] items-start gap-4 py-5 sm:grid-cols-[9rem_1fr] sm:gap-6"
     >
-      <img src={imageFor(project)} alt="" className="aspect-[3/2] w-full rounded-lg border border-line object-cover" />
+      <img src={imageFor(project)} alt="" className="aspect-[3/2] w-full rounded-lg border border-line bg-white object-contain" />
       <div>
         <div className="flex flex-wrap items-center gap-2">
           <TypeLabel>{project.status}</TypeLabel>
@@ -39,7 +39,7 @@ export default function ResearchEntry({ project }: { project: ResearchProject })
         <img
           src={imageFor(project)}
           alt=""
-          className="aspect-[3/2] w-full object-cover transition duration-300 group-hover:scale-[1.03]"
+          className="aspect-[3/2] w-full bg-white object-contain transition duration-300 group-hover:scale-[1.03]"
         />
       </Link>
       <div>

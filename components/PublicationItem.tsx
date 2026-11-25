@@ -5,7 +5,7 @@ import { personalInfo, publicationLinks, type Publication } from "@/lib/data";
 export default function PublicationItem({ pub, image }: { pub: Publication; image?: string }) {
   return (
     <div className={image ? "grid gap-4 sm:grid-cols-[9rem_1fr]" : ""}>
-      {image && <img src={image} alt="" className="aspect-[3/2] w-full rounded-lg border border-line object-cover" />}
+      {image && <img src={image} alt="" className="aspect-[3/2] w-full rounded-lg border border-line bg-white object-contain" />}
       <div>
         <TypeLabel>Journal article</TypeLabel>
         <p className="mt-2 font-medium text-ink">{pub.title}</p>
